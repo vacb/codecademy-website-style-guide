@@ -1,0 +1,198 @@
+/* Import fonts */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* Reset padding and margin from defaults*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-width: 500px;
+}
+
+main {
+    padding: 0 10px;
+}
+
+/*Headings*/
+h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1.main-header {
+    padding: 10px 10px 0 10px;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #2A9D8F;
+    color: white;
+}
+
+/* Navigation selectors*/
+
+nav li {
+    float: left; 
+}
+
+nav li.right {
+    float: right; 
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #264653;
+    overflow: hidden;  
+}
+
+li a {
+    display: block;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}   
+
+li a.active {
+    background-color: #2A9D8F;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li.right, nav ul li {
+        float: none;
+    }
+  }
+
+section {
+    border: 2px solid #264653;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+/* COLOURS section */
+.colour-container {
+    display: inline-block;
+}
+
+.colour-swatch {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+.colour-1 {
+  background-color: #264653;  
+}
+
+.colour-2 {
+    background-color: #2A9D8F;   
+}
+
+.colour-3 {
+    background-color: #E9C46A;   
+}
+
+.colour-4 {
+    background-color: #F4A261;    
+}
+
+.colour-5 {
+    background-color: #E76F51;  
+}
+
+.colour-name {
+    
+}
+
+.colour-code {
+    font-size: 0.8rem;
+}
+
+/* FONTS section */
+.font-1 {
+    font-family: "Roboto", sans-serif;
+}
+
+p.font-1, p.font-2 {
+    margin: 10px 10px;
+}
+
+.font-2 {
+    font-family: "Lato", sans-serif;
+
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* TEXT STYLES section */
+.font-description {
+    list-style-type: none;
+    background-color: #E76F51;
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+}
